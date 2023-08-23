@@ -1,0 +1,361 @@
+/* fonts 
+	font-family: 'Work Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* common code start */
+:root{
+	font-family: 'Work Sans', sans-serif;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+.container-fluid{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	width: 85%;
+	height: 100%;
+	margin: 0px auto;
+}
+.d-flex{
+	display: flex;
+	flex-direction: row;
+}
+a{
+	text-decoration: none;
+}
+a, span{
+	display: inline-block;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul{
+	margin: 0px;
+	padding: 0px;
+}
+ul li{
+	list-style: none;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.title{
+	margin-bottom: 40px;
+	position: relative;
+}
+.title::after{
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 3px;
+	background: #6C55F9;
+	margin: 5px 0px;
+}
+.title h2{
+	color: #645f88;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-top: 10px;
+}
+.title h3{
+	color: #898798;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+/* common code end */
+
+/* nav section start */
+nav{
+	padding: 20px 0px;
+	background: #fff;
+}
+.navbar{
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .navbar-brand{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 20px;
+	font-weight: 600;
+}
+.navbar .navbar-brand span{
+	color: #6c55f9;
+}
+.navbar-nav a{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px 20px;
+	margin: 0px 5px;
+	transition: .3s linear;
+}
+.navbar-nav a:hover{
+	color: #fff;
+	background: #6c55f9;
+}
+.navbar-nav a.active{
+	color: #6c55f9;
+	transition: .3s linear;
+}
+.navbar-nav a.active:hover{
+	color: #fff;
+}
+.navbar-nav li:last-child a{
+	color: #fff;
+	background: #6c55f9;
+	border-radius: 5px;
+	transition: .3s linear;
+}
+.navbar-nav li:last-child a:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+/* nav section end */
+
+/* header section start */
+header{
+	background: #fff;
+}
+.header-area{
+	background: #F6F5FC;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+.header-content{
+	width: 100%;
+	padding: 80px 40px;
+	box-sizing: border-box;
+}
+.header-content h1{
+	color: #645f88;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+.header-content p{
+	color: #8e8aad;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 20px 0px;
+	line-height: 1.5;
+}
+.header-content a{
+	color: #fff;
+	font-size: 16px;
+	background: #6c55f9;
+	padding: 10px 30px;
+	border-radius: 20px;
+	transition: .3s linear;
+}
+.header-content a:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+.header-poster{ 
+	width: 100%;
+	padding: 80px 40px;
+	box-sizing: border-box;
+}
+/* header section end */
+
+/* features section start */
+.features-section{
+	background: #fff;
+	margin: 60px 0px;
+}
+.features-area .card{
+	padding: 40px 20px;
+	text-align: center;
+	/* box-shadow: 5px 5px 12px rgba(95,92,120,0.12), -5px -5px 12px rgba(95,92,120,0.12); */
+	box-shadow: 0px 0px 12px rgba(95,92,120,0.12);
+	border-radius: 15px;
+	cursor: pointer;
+}
+.features-area .card i{
+	font-size: 30px;
+    padding: 30px;
+    border-radius: 50%;
+	transition: .5s linear;	
+}
+.features-area .card i.fa-tiktok{
+	color: #FAC14D;
+	background: #FFF5DF;
+}
+.features-area .card:hover i.fa-tiktok{
+	color: #FFF5DF;
+	background: #FAC14D;
+}
+.features-area .card i.fa-heart{
+	color: #35BB78;
+	background: #CEFFE6;
+}
+.features-area .card:hover i.fa-heart{
+	color: #CEFFE6;
+	background: #35BB78;
+}
+.features-area .card i.fa-twitter{
+	color: #6C55F9;
+	background: #E8E5FC;
+}
+.features-area .card:hover i.fa-twitter{
+	color: #E8E5FC;
+	background: #6C55F9;
+}
+.features-area .card h2{
+	color: #645f88;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 20px;
+}
+.features-area .card p{
+	color: #898798;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 10px 0px 15px 0px;
+}
+.features-area .card a{
+	color: #fff;
+	font-size: 16px;
+	background: #6c55f9;
+	padding: 10px 30px;
+	border-radius: 5px;
+	transition: .3s linear;
+}
+.features-area .card a:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+/* services section end */
+
+/* aboutUs section start */
+.aboutUs-section{
+	background: #fff;
+	margin: 60px 0px;
+}
+.aboutUs-content{
+	width: 100%;
+}
+.aboutUs-content .details p{
+	color: #898798;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 10px 0px 15px 0px;
+}
+.aboutUs-content .details a{
+	color: #fff;
+	font-size: 16px;
+	background: #6c55f9;
+	padding: 10px 30px;
+	border-radius: 5px;
+	margin-top: 20px;
+	transition: .3s linear;
+}
+.aboutUs-content .details a:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+.aboutUs-poster{
+	width: 100%;
+}
+.aboutUs-poster img{
+	width: auto;
+}
+/* aboutUs section end */
+
+/* services section start */
+.services-section{
+	background: #F6F5FC;
+	padding: 60px 0px;
+}
+.services-area{
+	
+}
+.services-area .title{
+	text-align: center;
+}
+.services-area .title::after{
+	left: 550px;
+}
+.services-container .card{
+	width: 100%;
+	text-align: center;
+}
+.services-container .card i{
+	color: #6C55F9;
+	font-size: 20px;
+	padding: 25px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 4px rgba(95,92,120,0.16);
+}
+.services-container .card h3{
+	color: #2d2b3a;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+	margin: 10px 0px 10px 0px;
+}
+.services-container .card p{
+	color: #898798;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+/* services section end */
+
+/* seo check section start */
+.seo-check-section{
+	padding: 80px 0px;
+	background: url(../img/seo_check.svg), radial-gradient(circle, rgba(178,98,248,1), rgba(96, 62, 248, 1));
+	background-size: contain;
+}
+.seo-check-area{
+	text-align: center;
+}
+.seo-check-area h2{
+	color: #fff;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+.seo-check-area form {
+    width: 70%;
+    margin: 0px auto;
+	position: relative;
+}
+.seo-check-area form input{
+	background: #fff;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0px;
+}
+.seo-check-area form input[placeholder]{
+	outline: 0px;
+}
+.seo-check-area form button{
+	color: #fff;
+	font-size: 16px;
+	background: #35bb78;
+	padding: 14px 30px;
+	border-radius: 5px;
+	border: 0px;
+	cursor: pointer;
+	transition: .3s linear;
+	
+	position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.seo-check-area form button:hover{
+	background: #645F88;
+}
+/* seo check section end */
